@@ -1,0 +1,52 @@
+.skills{
+
+    background-color: $bg-skills;
+    color: $txt-color-dark;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem 0;
+    padding: 5rem 0;
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem 0;
+        @include media-mdi {
+            flex-direction: row;
+            justify-content: center;
+            gap: 4rem;
+        }
+    }
+
+    &__heading{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: $txt-bold;
+        margin-bottom: 3.5rem;
+        @include media-mdi {
+            font-size: 3.6rem;
+        }
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: $txt-semi;
+
+        &::before{
+            display: inline-block;
+            padding-right: 1.5rem;
+        }
+    }
+}
+
+
+.skills__item--html::before {content: url(/assets/img/svg/icon_html.svg);}
+.skills__item--css::before {content: url(/assets/img/svg/icon_css.svg);}
+.skills__item--sass::before {content: url(/assets/img/svg/icon_sass.svg);}
+.skills__item--js::before {content: url(/assets/img/svg/icon_js.svg);}
+.skills__item--vue::before {content: url(/assets/img/svg/icon_vue.svg);}
+.skills__item--php::before {content: url(/assets/img/svg/icon_php.svg);}
+.skills__item--mysql::before {content: url(/assets/img/svg/icon_mysql.svg);}

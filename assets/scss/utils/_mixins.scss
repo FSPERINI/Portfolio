@@ -1,0 +1,48 @@
+// Medias
+@mixin media-s {
+    @media (min-width: #{$s-width}) {
+	    @content;
+    }
+}
+
+@mixin media-m {
+    @media (min-width: #{$m-width}) {
+	    @content;
+    }
+}
+
+@mixin media-l {
+    @media (min-width: #{$l-width}) {
+	    @content;
+    }
+}
+
+@mixin media-xl {
+    @media (min-width: #{$xl-width}) {
+	    @content;
+    }
+}
+
+@mixin media-mtab {
+    @media (min-width: #{$mtab-width}) {
+	    @content;
+    }
+}
+
+@mixin media-tab {
+    @media (min-width: #{$tab-width}) {
+	    @content;
+    }
+}
+
+@mixin media-mdi {
+    @media (min-width: #{$mdi-width}) {
+	    @content;
+    }
+}
+
+@mixin media-hdi {
+    @media (min-width: #{$hdi-width}) {
+	    @content;
+    }
+}

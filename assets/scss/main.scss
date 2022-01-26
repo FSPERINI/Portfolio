@@ -1,0 +1,31 @@
+// Utilities      
+//Fichiers prioritaires
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+// Vendors
+//CSS Externes
+@import './vendors/reset';
+
+// Base
+// Polices + Fichiers de base
+@import './base/font';
+@import './base/base';
+@import './base/animations';
+
+// Components
+@import './components/projects';
+
+// Layouts
+@import './layouts/header';
+@import './layouts/hamburger';
+@import './layouts/hero';
+@import './layouts/content';
+@import './layouts/skills';
+@import './layouts/footer';
+
+// Pages
+@import './pages/home';
+@import './pages/about';
+@import './pages/project';

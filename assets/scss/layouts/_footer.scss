@@ -1,0 +1,42 @@
+.footer {
+    background: url(/assets/img/gradient_bottom.png) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 4rem 0;
+    @include media-hdi {
+        & {
+            padding: 10rem 0;
+        }
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem 0;
+        overflow-wrap: break-word;
+        hyphens: manual;
+        @include media-hdi {
+            & {
+                align-items: center;
+            }
+        }
+    }
+    
+    &__tagline{
+        display: block;
+        font-size: 2.4rem;
+    }
+    
+    &__link{
+        font-family: $txt-heading;
+        font-size: 3.6rem;
+        text-decoration: none;
+        color: $txt-color;
+        font-weight: $txt-bold;
+        
+        &:hover{
+            color: $primary-color;
+            
+        }
+    }
+}

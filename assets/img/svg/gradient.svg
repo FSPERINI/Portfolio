@@ -1,0 +1,19 @@
+<svg width="320" height="568" viewBox="0 0 320 568" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_242_15" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="320" height="568">
+<rect width="320" height="568" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_242_15)">
+<ellipse cx="336.891" cy="-9.76086" rx="373.109" ry="240.239" fill="url(#paint0_radial_242_15)" fill-opacity="0.4"/>
+<ellipse cx="19.8829" cy="61.103" rx="409.883" ry="281.576" fill="url(#paint1_radial_242_15)" fill-opacity="0.4"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_242_15" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(336.891 -9.76086) rotate(90) scale(240.239 373.109)">
+<stop stop-color="#00ADFF"/>
+<stop offset="1" stop-color="#00ADFF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_242_15" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(19.8829 61.103) rotate(90) scale(281.576 409.883)">
+<stop stop-color="#B62929"/>
+<stop offset="1" stop-color="#B62929" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

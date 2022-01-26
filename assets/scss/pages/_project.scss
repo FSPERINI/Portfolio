@@ -1,0 +1,80 @@
+.project {
+    margin-bottom: 5rem;
+    @include media-mdi {
+        margin-bottom: 11rem;
+    }
+
+    &__specs {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include media-mdi {
+            flex-direction: row;
+            gap: 5.5rem;
+            justify-content: center;
+        }
+    }
+
+    &__prev {
+        display: flex;
+        justify-content: center;
+    }
+    &__prev-img {
+        width: 100%;
+        border-radius: 5px;
+        max-width: 874px;
+    }
+
+    &__content {
+        margin-top: 5rem;
+        @include media-mdi {
+            margin-top: 11rem;
+        }
+    }
+
+        &__heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            font-weight: $txt-bold;
+            text-transform: uppercase;
+            margin-bottom: 3.5rem;
+            text-align: center;
+            @include media-mdi {
+                font-size: 3.6rem;
+            }
+        }
+
+        &__description {
+            @include media-mdi {
+                font-size: 2.4rem;
+            }
+        }
+
+    &__link {
+        color: $txt-color;
+        text-decoration: none;
+
+        &:hover {
+            fill: $primary-color;
+        }
+    }
+}
+
+.preview {
+    padding: 5rem 0;
+    @include media-mdi {
+        padding: 11rem 0;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+
+    &__img {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+
