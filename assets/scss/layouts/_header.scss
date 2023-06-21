@@ -1,0 +1,106 @@
+.header {
+    position: fixed;
+    z-index: 98;
+    margin-top: 2.5rem;
+}
+
+.header__nav {
+    &-logo {
+        height: 30px;
+        left: 5%;
+        position: fixed;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+}
+
+    &-icon {
+        right: 5%;
+        position: fixed;
+        z-index: 121;
+        cursor: pointer;
+
+        @include media-mdi {
+            & {
+                display: none;
+            }
+        }
+    }
+}
+
+.header__list {
+
+    //Menu Desktop Caché par défaut (mobile first)
+    font-family: 'Raleway', sans-serif;
+    font-weight: $txt-bold;
+    
+    right: 10%;
+    position: fixed;
+    z-index: 120;
+    cursor: pointer;
+    display: none;
+    gap: 0 5rem;
+
+    @include media-mdi {
+        & {
+            display: flex;
+        }
+    }
+
+
+        
+    &--mobile{
+        opacity: 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: $txt-bold;
+        font-size: 3.6rem;
+        position: absolute;
+        top: 0;
+        margin-top: -2.5rem;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+        align-items: center;
+        z-index: 120;
+        background-image: url(/assets/img/gradient_menu.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        animation: fadein 0.25s;
+        -webkit-animation: fadein 0.25s;
+        animation-fill-mode: forwards;
+}
+
+
+    &-item {
+
+        text-transform: uppercase;
+        &:hover::after{
+            width: 100%;
+        }
+        &::after{
+            content: '';
+            display: block;
+            height: 5px;
+            width: 0;
+            background: $primary-color;
+            transition: width .3s;
+            -webkit-transition: width .3s;
+            -moz-transition: width .3s;
+            -ms-transition: width .3s;
+            -o-transition: width .3s;
+}
+    }
+    
+    &-link{
+        font-weight: $txt-bold;
+        color: $txt-color;
+        text-decoration: none;
+        mix-blend-mode: difference;
+    }
+}

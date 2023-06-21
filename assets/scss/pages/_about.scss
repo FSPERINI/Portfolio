@@ -1,0 +1,38 @@
+.about {
+
+
+    &__avatar {
+        display: flex;
+        justify-content: center;
+    }
+    &__avatar-img {
+        width: 100%;
+        max-width: 487px;
+    }
+
+    &__content {
+        margin: 5rem 0;
+        @include media-mdi {
+            margin: 11rem 0;
+        }
+    }
+        &__heading {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2rem;
+            font-weight: $txt-bold;
+            text-transform: uppercase;
+            margin-bottom: 3.5rem;
+            text-align: center;
+            line-height: 1.2;
+            @include media-mdi {
+                font-size: 3.6rem;
+            }
+        }
+
+        &__description {
+            @include media-mdi {
+                font-size: 2.4rem;
+            }
+        }
+}
+

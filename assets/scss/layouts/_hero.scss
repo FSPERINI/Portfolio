@@ -1,0 +1,128 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    /*height: 50vh;*/
+    padding: 10rem 0;
+    background: url(/assets/img/gradient.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+
+    &--hp {
+        height: 100vh;
+        text-align: unset;
+        padding: unset;
+    }
+
+    &__overheading {
+        font-family: $txt-heading;
+        font-size: 2.4rem;
+        font-weight: $txt-semi;
+        color: $primary-color;
+        @include media-hdi {
+            font-size: 4.8rem;
+        }
+    }
+
+    &__heading{
+        font-family: $txt-heading;
+        font-size: 7.2rem; 
+        font-weight: $txt-bold;
+        padding: 3rem 0;
+        display: block;
+        @include media-mtab {
+            & {
+                hyphens: manual;
+                font-size: 10.2rem;
+            }
+        }
+        @include media-hdi {
+            font-size: 19.1rem;
+        }
+
+        
+        &--wrap {
+            overflow-wrap: break-word;
+        }
+        
+        &--cmd{
+            color: $primary-color;
+        }
+
+        &--underscore{
+            animation: blink .5s linear infinite alternate;
+            -webkit-animation: blink .5s linear infinite alternate;
+        }
+}
+
+&__tagline {
+    font-family: $txt-heading;
+        font-size: 1.8rem; 
+        font-weight: $txt-semi;
+        margin-bottom: 6rem;
+        @include media-hdi {
+            font-size: 3.6rem;
+            margin: 6rem 0;
+        }
+        
+        &--strong{
+            font-weight: $txt-bold;
+        }
+    }
+    
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+        @include media-hdi {
+            justify-content: unset;
+        }
+    }
+    
+    &__link {
+        display: inline-block;
+        font-size: 1.8rem;
+        color: $txt-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #FFFFFF;
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+        @include media-hdi {
+            width: auto;
+            padding: 1rem 2rem;
+        }
+        
+        &:hover {
+            color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+    
+    &__arrow{
+        position: absolute;
+        margin-bottom: 2.5rem;
+        bottom: 0;
+        @include media-hdi {
+            position: unset;
+            margin: 0;
+        }
+    }
+}
+
+.hero__content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    @include media-hdi {
+        flex-direction: row;
+    }
+}
